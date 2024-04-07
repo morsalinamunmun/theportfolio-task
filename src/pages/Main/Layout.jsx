@@ -6,7 +6,7 @@ const Layout = () => {
     return (
         <div  className={`flex h-screen`}>
             <Menubar/>
-                <main className="scroll-smooth bg-[#444444] w-full h-auto">
+                <main className="scroll-smooth overflow-auto bg-[#444444] w-full h-auto">
                     <Outlet></Outlet>
                 </main>
         </div>

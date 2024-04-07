@@ -2,8 +2,8 @@ import {  NavLink } from "react-router-dom";
 
 const Menubar = () => {
     return (
-        <div  className={`flex h-screen bg-[#333333] `}>
-            <aside className="z-20 flex-shrink-0 hidden w-48 overflow-y-auto h-screen bg-[#333333] text-white md:block">
+        <div  className={`flex h-screen bg-[#333333] border-r-3 border-r-gray-950`}>
+            <aside className="z-20 flex-shrink-0 hidden w-48 border-r-3 border-r-gray-950 overflow-y-auto h-screen bg-[#333333] text-white md:block">
                 <div>
                     <div className="text-blue-950 flex flex-col justify-between">
                         <div className="">

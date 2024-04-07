@@ -34,22 +34,24 @@ const About = () => {
                     </div>
                 </div>
             </div> */}
-            <div className="bg-[#333333]">
+            <div className="bg-[#333333] p-10 py-20 pb-28 h-full">
                 <div>
                     <h1 className="text-3xl border-b-2 border-b-[#ff714a] text-white font-semibold w-40">Testimonial</h1>
                     {
                         userInfo.user && (
                             <div>
-                                <div className="grid grid-cols-2 text-[#d5d5d5]">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-[#d5d5d5]">
                                     {userInfo.user.testimonials.map((testimonial, index) => (
-                                        <div key={index}>
-                                            <div className="border border-slate-400 bg-[#434343] rounded">
-                                                <p>{testimonial.review}</p>
+                                        <div key={index} className="relative mb-20">
+                                            <div className="border border-gray-600 bg-[#434343] h-40 rounded p-5 flex-grow overflow-hidden">
+                                                <p className="h-full line-clamp-3">{testimonial.review}</p>
                                             </div>
-                                            <div>
-                                                <img src={testimonial.image.url} alt={testimonial.name} />
-                                                <h2>{testimonial.name}</h2>
-                                                <p>{testimonial.position}</p>
+                                            <div className="flex gap-2 items-center absolute -left-10 top-[140px]">
+                                                <img className="w-28 rounded-full" src={testimonial.image.url} alt={testimonial.name} />
+                                                <div className="">
+                                                    <h2>{testimonial.name}</h2>
+                                                    <p>{testimonial.position}</p>
+                                                </div>
                                             </div>
                                         </div>
                                     ))}
