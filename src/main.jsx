@@ -13,6 +13,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
+import Resume from './pages/Resume/Resume';
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path:'/',
         element: <About/>
+      },
+      {
+        path: '/resume',
+        element: <Resume/>
       }
     ]
   },

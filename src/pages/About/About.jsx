@@ -36,7 +36,7 @@ const About = () => {
             </div> */}
             <div className="bg-[#333333] p-10 py-20 pb-28 h-full">
                 <div>
-                    <h1 className="text-3xl border-b-2 border-b-[#ff714a] text-white font-semibold w-40">Testimonial</h1>
+                    <h1 className="text-3xl border-b-2 border-b-[#ff714a] text-white font-semibold w-40 mb-5 pb-2">Testimonial</h1>
                     {
                         userInfo.user && (
                             <div>
